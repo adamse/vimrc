@@ -19,6 +19,9 @@ set backspace=indent,eol,start
 " tree style file listing
 let g:netrw_liststyle = 3
 
+" always show the status line
+set laststatus=2
+
 " statusline with git info
 set statusline=%<%f\ %{FugitiveStatusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
