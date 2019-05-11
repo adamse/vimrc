@@ -20,11 +20,12 @@ set backspace=indent,eol,start
 let g:netrw_liststyle = 3
 
 " statusline with git info
-" set statusline=%<%f\ %{FigutiveStatusLine()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %{FugitiveStatusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " vertical splitter style
 " set fillchars+=vert:| " seems to be the default
 hi VertSplit guibg=bg guifg=fg
+hi VertSplit cterm=NONE ctermbg=NONE
 
 " use rg for grep
 set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
@@ -71,3 +72,6 @@ let &t_ti.="\e[1 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
+
+" package management
+set packpath+=~/.vim/pack/
