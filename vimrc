@@ -1,3 +1,5 @@
+execute pathogen#infect()
+
 syntax on
 filetype indent on
 set background=light
@@ -68,13 +70,27 @@ cabbrev W w
 
 " kill eol whitespace
 autocmd FileType haskell autocmd BufWritePre <buffer> %s/\s\+$//e
+autocmd FileType c autocmd BufWritePre <buffer> %s/\s\+$//e
 autocmd FileType vim autocmd BufWritePre <buffer> %s/\s\+$//e
 
 " set cursor to bar in insert mode
 let &t_ti.="\e[1 q"
+let &t_te.="\e[0 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
 
-" package management
-set packpath+=~/.vim/pack/
+" find C function name
+fun! ShowCishFuncName()
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bWn'))
+  echohl None
+endfun
+
+augroup CishFunctionName
+  au!
+  autocmd FileType c map F :call ShowCishFuncName() <CR>
+  autocmd FileType cpp map F :call ShowCishFuncName() <CR>
+augroup end
+
+" ctrlp
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
