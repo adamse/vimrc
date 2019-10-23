@@ -1,5 +1,5 @@
 [submodule "fugitive"]
-	path = bundle/figutive
+	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/ctrlp"]
 	path = bundle/ctrlp
