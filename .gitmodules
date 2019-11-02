@@ -7,3 +7,6 @@
 [submodule "bundle/ripgrep"]
 	path = bundle/ripgrep
 	url = https://github.com/jremmen/vim-ripgrep
+[submodule "bundle/nix"]
+	path = bundle/nix
+	url = https://github.com/LnL7/vim-nix
