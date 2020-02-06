@@ -31,9 +31,9 @@ set laststatus=2
 set statusline=%<%f\ %{FugitiveStatusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " vertical splitter style
-" set fillchars+=vert:| " seems to be the default
+set fillchars+=vert:\  " a space char
 hi VertSplit guibg=bg guifg=fg
-hi VertSplit cterm=NONE ctermbg=NONE
+" hi VertSplit cterm=bg ctermbg=fg
 
 " use rg for grep
 set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
