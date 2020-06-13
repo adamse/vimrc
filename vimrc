@@ -18,6 +18,9 @@ set smarttab
 set shiftwidth=2
 set tabstop=2
 
+" but not for makefiles :)
+autocmd FileType make set noexpandtab
+
 " backspace over everything
 set backspace=indent,eol,start
 
