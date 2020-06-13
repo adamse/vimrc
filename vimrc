@@ -83,6 +83,8 @@ augroup EOL
   autocmd FileType python autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup end
 
+command! Ws %s/\s\+$//e
+
 " set cursor to bar in insert mode
 let &t_ti.="\e[1 q"
 let &t_te.="\e[0 q"
