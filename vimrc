@@ -106,7 +106,7 @@ augroup CishFunctionName
 augroup end
 
 " grep for word under cursor
-command! Gword grep <cword>
+command! Gword grep "\b<cword>\b"
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
