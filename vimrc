@@ -110,3 +110,9 @@ command! Gword grep "\b<cword>\b"
 
 " ctrlp
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" coc.vim
+nmap gn <Plug>(coc-diagnostic-next)
+nmap gp <Plug>(coc-diagnostic-prev)
+nmap ga <Plug>(coc-codeaction-line)
+nmap gd <Plug>(coc-definition)

@@ -1,0 +1,25 @@
+{
+  "diagnostic": { 
+    "enableSign": false
+  },
+  "suggest": {
+    "autoTrigger": false
+  },
+  "languageserver": {
+    "haskell": {
+      "command": "ghcide",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "hie.yaml"
+      ],
+      "filetypes": [
+        "haskell",
+        "lhaskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+        }
+      }
+    }
+  }
+}
