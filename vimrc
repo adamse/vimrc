@@ -81,6 +81,7 @@ augroup EOL
   autocmd FileType c autocmd BufWritePre <buffer> %s/\s\+$//e
   autocmd FileType vim autocmd BufWritePre <buffer> %s/\s\+$//e
   autocmd FileType python autocmd BufWritePre <buffer> %s/\s\+$//e
+  autocmd FileType nix autocmd BufWritePre <buffer> %s/\s\+$//e
 augroup end
 
 command! Ws %s/\s\+$//e
