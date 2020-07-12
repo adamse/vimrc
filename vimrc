@@ -87,6 +87,12 @@ augroup end
 
 command! Ws %s/\s\+$//e
 
+" haskell
+augroup haskell
+  au!
+  autocmd FileType haskell setlocal tags=hstags
+augroup end
+
 " set cursor to bar in insert mode
 let &t_ti.="\e[1 q"
 let &t_te.="\e[0 q"
