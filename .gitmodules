@@ -13,3 +13,6 @@
 [submodule "bundle/coc.nvim"]
 	path = bundle/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "bundle/vim-sandwich"]
+	path = bundle/vim-sandwich
+	url = https://github.com/machakann/vim-sandwich
