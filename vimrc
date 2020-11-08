@@ -56,6 +56,9 @@ set incsearch
 " format comments with gq
 set formatoptions+=q
 
+" open files with folds open
+set foldlevelstart=99
+
 " expand %% to dir of open file
 cabbr <expr> %% expand('%:p:h')
 
