@@ -123,3 +123,6 @@ nmap gn <Plug>(coc-diagnostic-next)
 nmap gp <Plug>(coc-diagnostic-prev)
 nmap ga <Plug>(coc-codeaction-line)
 nmap gd <Plug>(coc-definition)
+
+" mapping for fzf
+nnoremap <c-p> :Files<CR>

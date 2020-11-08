@@ -1,9 +1,6 @@
 [submodule "fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = https://github.com/ctrlpvim/ctrlp.vim
 [submodule "bundle/ripgrep"]
 	path = bundle/ripgrep
 	url = https://github.com/jremmen/vim-ripgrep
@@ -16,3 +13,9 @@
 [submodule "bundle/vim-sandwich"]
 	path = bundle/vim-sandwich
 	url = https://github.com/machakann/vim-sandwich
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule "bundle/fzf"]
+	path = bundle/fzf
+	url = https://github.com/junegunn/fzf.git
