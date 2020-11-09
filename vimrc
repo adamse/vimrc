@@ -72,6 +72,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+tnoremap <Esc><Esc> <C-\><C-n>
+tnoremap <C-j> <C-w>j
+tnoremap <C-k> <C-w>k
+tnoremap <C-h> <C-w>h
+tnoremap <C-l> <C-w>l
+
 " I often mistype these :)
 cabbrev Grep grep
 cabbrev E e
