@@ -33,7 +33,7 @@ let g:netrw_liststyle = 3
 set laststatus=2
 
 " statusline with git info
-set statusline=%<%f\ %{FugitiveStatusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %{FugitiveStatusline()}\ %{coc#status()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " vertical splitter style
 set fillchars+=vert:\  " a space char
