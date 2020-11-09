@@ -4,6 +4,8 @@ syntax on
 filetype indent on
 set background=light
 
+set enc=utf-8
+
 set autoindent
 " disable autoindent
 autocmd FileType yaml filetype indent off
