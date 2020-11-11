@@ -1,3 +1,5 @@
+let g:fzf_command_prefix="Fzf"
+
 execute pathogen#infect()
 
 syntax on
@@ -136,4 +138,4 @@ nmap ga <Plug>(coc-codeaction-line)
 nmap gd <Plug>(coc-definition)
 
 " mapping for fzf
-nnoremap <c-p> :Files<CR>
+nnoremap <c-p> :FzfFiles<CR>
