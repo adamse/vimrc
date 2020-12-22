@@ -139,3 +139,7 @@ nmap gd <Plug>(coc-definition)
 
 " mapping for fzf
 nnoremap <c-p> :FzfFiles<CR>
+
+" nerdcommenter
+let g:NERDDefaultAlign = 'left'
+let g:NERDSpaceDelims = 1
