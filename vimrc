@@ -82,6 +82,10 @@ tnoremap <C-k> <C-w>k
 tnoremap <C-h> <C-w>h
 tnoremap <C-l> <C-w>l
 
+" open buffer in new tab
+nnoremap <silent> <C-w>z :tab split<CR>
+tnoremap <silent> <C-w>z <C-w>:tab split<CR>
+
 " I often mistype these :)
 cabbrev Grep grep
 cabbrev E e
