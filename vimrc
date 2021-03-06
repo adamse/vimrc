@@ -86,6 +86,7 @@ tnoremap <C-l> <C-w>l
 cabbrev Grep grep
 cabbrev E e
 cabbrev W w
+nmap K <Nop>
 
 " kill eol whitespace
 augroup EOL

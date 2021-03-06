@@ -22,3 +22,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/preservim/nerdcommenter.git
+[submodule "bundle/autoformat"]
+	path = bundle/autoformat
+	url = https://github.com/chiel92/vim-autoformat
