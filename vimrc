@@ -133,10 +133,10 @@ command! Gword grep "\b<cword>\b"
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " coc.vim
-nmap gn <Plug>(coc-diagnostic-next)
-nmap gp <Plug>(coc-diagnostic-prev)
-nmap ga <Plug>(coc-codeaction-line)
-nmap gd <Plug>(coc-definition)
+nmap <space>n <Plug>(coc-diagnostic-next)
+nmap <space>p <Plug>(coc-diagnostic-prev)
+nmap <space>a <Plug>(coc-codeaction-line)
+nmap <space>d <Plug>(coc-definition)
 
 " mapping for fzf
 nnoremap <c-p> :FzfFiles<CR>
