@@ -148,5 +148,12 @@ nnoremap <c-p> :FzfFiles<CR>
 " nerdcommenter
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
+
+" vim-autoformat
+augroup autoformat
+  au!
+  " autocmd FileType rust autocmd BufWrite :Autoformat
+augroup end
+
 command! NoBind set noscrollbind | nocursorbind
 
