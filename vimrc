@@ -144,3 +144,5 @@ nnoremap <c-p> :FzfFiles<CR>
 " nerdcommenter
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
+command! NoBind set noscrollbind | nocursorbind
+
