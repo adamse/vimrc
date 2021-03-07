@@ -81,6 +81,8 @@ tnoremap <C-j> <C-w>j
 tnoremap <C-k> <C-w>k
 tnoremap <C-h> <C-w>h
 tnoremap <C-l> <C-w>l
+tnoremap <Esc>gt <C-w>gt
+tnoremap <Esc>gT <C-w>gT
 
 " open buffer in new tab
 nnoremap <silent> <C-w>z :tab split<CR>
