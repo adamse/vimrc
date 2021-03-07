@@ -107,6 +107,12 @@ augroup end
 
 command! Ws %s/\s\+$//e
 
+augroup Things
+  au!
+  " makes gq formatting of paragraphs work in haskell comments
+  autocmd FileType haskell setlocal comments+=b:--
+augroup end
+
 " haskell
 "augroup haskell
 "  au!
