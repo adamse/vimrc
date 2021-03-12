@@ -25,3 +25,6 @@
 [submodule "bundle/autoformat"]
 	path = bundle/autoformat
 	url = https://github.com/chiel92/vim-autoformat
+[submodule "bundle/vim-obsession"]
+	path = bundle/vim-obsession
+	url = https://github.com/tpope/vim-obsession.git
