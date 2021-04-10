@@ -76,13 +76,18 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-tnoremap <Esc><Esc> <C-\><C-n>
 tnoremap <C-j> <C-w>j
 tnoremap <C-k> <C-w>k
 tnoremap <C-h> <C-w>h
 tnoremap <C-l> <C-w>l
 tnoremap <Esc>gt <C-w>gt
 tnoremap <Esc>gT <C-w>gT
+tnoremap <Esc><Esc> <C-\><C-n>
+
+augroup FzfNormalEscape
+  au!
+  au FileType fzf tnoremap <Esc><Esc> <Esc><Esc>
+augroup END
 
 " open buffer in new tab
 nnoremap <silent> <C-w>z :tab split<CR>
