@@ -1,5 +1,5 @@
 {
-  "diagnostic": { 
+  "diagnostic": {
     "enableSign": false
   },
   "suggest": {
@@ -8,7 +8,9 @@
   "languageserver": {
     "haskell": {
       "command": "ghcide",
-      "args": ["--lsp"],
+      "args": [
+        "--lsp"
+      ],
       "rootPatterns": [
         "hie.yaml"
       ],
@@ -17,9 +19,20 @@
         "lhaskell"
       ],
       "initializationOptions": {
-        "languageServerHaskell": {
-        }
+        "languageServerHaskell": {}
       }
+    }
+  },
+  "rust-analyzer": {
+    "serverPath": "~/local/rust-analyzer/bin/rust-analyzer-linux",
+    "cargo": {
+      "loadOutDirsFromCheck": true
+    },
+    "procMacro": {
+      "enable": true
+    },
+    "diagnostics": { 
+      "disabled": ["unresolved-proc-macro"]
     }
   }
 }
