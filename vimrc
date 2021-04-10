@@ -1,4 +1,5 @@
 let g:fzf_command_prefix="Fzf"
+let mapleader="<Space>"
 
 execute pathogen#infect()
 
