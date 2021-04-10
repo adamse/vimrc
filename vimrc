@@ -103,12 +103,13 @@ nmap K <Nop>
 " kill eol whitespace
 augroup EOL
   au!
-  autocmd FileType haskell autocmd BufWritePre <buffer> %s/\s\+$//e
-  autocmd FileType c autocmd BufWritePre <buffer> %s/\s\+$//e
-  autocmd FileType vim autocmd BufWritePre <buffer> %s/\s\+$//e
-  autocmd FileType python autocmd BufWritePre <buffer> %s/\s\+$//e
-  autocmd FileType nix autocmd BufWritePre <buffer> %s/\s\+$//e
-  autocmd FileType markdown autocmd BufWritePre <buffer> %s/\s\+$//e
+  autocmd FileType haskell autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType c autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType vim autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType python autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType nix autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType markdown autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType bsc autocmd BufWritePre <buffer> RemoveTrailingSpaces
 augroup end
 
 command! Ws %s/\s\+$//e
