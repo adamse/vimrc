@@ -131,6 +131,7 @@ let &t_te.="\e[0 q"
 let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 
+
 " find C function name
 fun! ShowCishFuncName()
   echohl ModeMsg
@@ -171,3 +172,7 @@ augroup end
 
 command! NoBind set noscrollbind | nocursorbind
 
+" haskell
+let hs_allow_hash_operator = 1
+
+command! Ghci terminal ++close ghci
