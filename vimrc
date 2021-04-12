@@ -4,7 +4,7 @@ let mapleader="<Space>"
 execute pathogen#infect()
 
 syntax on
-filetype indent on
+filetype plugin indent on
 set background=light
 
 set enc=utf-8
