@@ -176,4 +176,7 @@ command! NoBind set noscrollbind | nocursorbind
 " haskell
 let hs_allow_hash_operator = 1
 
-command! Ghci terminal ++close ghci
+if !has('nvim')
+  command! Ghci terminal ++close ghci
+  command! -nargs=+ Man terminal ++close man <args>
+endif
