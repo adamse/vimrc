@@ -171,6 +171,7 @@ augroup autoformat
   " autocmd FileType rust autocmd BufWrite :Autoformat
 augroup end
 
+" https://github.com/tpope/vim-fugitive/issues/1350
 command! NoBind set noscrollbind | nocursorbind
 
 " haskell
