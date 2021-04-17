@@ -1,6 +1,9 @@
 let g:fzf_command_prefix="Fzf"
 let mapleader="<Space>"
 
+" rust
+let g:rustfmt_autosave = 1
+
 execute pathogen#infect()
 
 syntax on
