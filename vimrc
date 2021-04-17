@@ -171,6 +171,9 @@ nmap <space>p <Plug>(coc-diagnostic-prev)
 nmap <space>a <Plug>(coc-codeaction-line)
 nmap <space>d <Plug>(coc-definition)
 
+" default is 4s, creating a poor user experience (especially for coc.vim)
+set updatetime=250
+
 " mapping for fzf
 nnoremap <c-p> :FzfFiles<CR>
 
