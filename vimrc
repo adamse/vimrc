@@ -97,7 +97,7 @@ tnoremap <Esc><Esc> <C-\><C-n>
 
 augroup FzfNormalEscape
   au!
-  au FileType fzf tnoremap <Esc><Esc> <Esc><Esc>
+  au FileType fzf tnoremap <buffer> <Esc><Esc> <Esc><Esc>
 augroup END
 
 " open buffer in new tab
