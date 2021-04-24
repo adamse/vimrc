@@ -188,7 +188,7 @@ augroup autoformat
 augroup end
 
 " https://github.com/tpope/vim-fugitive/issues/1350
-command! NoBind set noscrollbind | nocursorbind
+command! NoBind set noscrollbind | set nocursorbind
 
 " haskell
 let hs_allow_hash_operator = 1
