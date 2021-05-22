@@ -38,8 +38,20 @@ let g:netrw_liststyle = 3
 " always show the status line
 set laststatus=2
 
+function! CocStatusDiagnostic() abort
+  let info = get(b:, 'coc_diagnostic_info', {})
+  if empty(info) | return '' | endif
+  let msgs = []
+  if get(info, 'error', 0)
+    call add(msgs, 'E' . info['error'])
+  endif
+  if get(info, 'warning', 0)
+    call add(msgs, 'W' . info['warning'])
+  endif
+  return join(msgs, ' ')
+endfunction
 " statusline with git info
-set statusline=%<%f\ %{FugitiveStatusline()}\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %{FugitiveStatusline()}\ %{CocStatusDiagnostic()}%h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " vertical splitter style
 set fillchars+=vert:\  " a space char
