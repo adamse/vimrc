@@ -91,7 +91,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-nnoremap <unique> <C-r> <Plug>NetrwRefresh
 
 if !has('nvim')
   tnoremap <C-j> <C-w>j
