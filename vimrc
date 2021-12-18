@@ -138,6 +138,8 @@ augroup EOL
   autocmd FileType nix autocmd BufWritePre <buffer> RemoveTrailingSpaces
   autocmd FileType markdown autocmd BufWritePre <buffer> RemoveTrailingSpaces
   autocmd FileType bsc autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType rust autocmd BufWritePre <buffer> RemoveTrailingSpaces
+  autocmd FileType asm autocmd BufWritePre <buffer> RemoveTrailingSpaces
 augroup end
 
 command! Ws %s/\s\+$//e
