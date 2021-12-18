@@ -215,3 +215,6 @@ if !has('nvim')
   command! Ghci terminal ++close ghci
   command! -nargs=+ Man terminal ++close man <args>
 endif
+
+" go to previous tab, gr because it is close to gt which moves to the next tab
+nnoremap <silent> gr :tabprevious<CR>
