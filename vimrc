@@ -24,8 +24,8 @@ set directory-=.
 " sane tabs
 set expandtab
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 " but not for makefiles :)
 autocmd FileType make setlocal noexpandtab
