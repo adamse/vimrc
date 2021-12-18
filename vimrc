@@ -186,6 +186,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 nmap <space>n <Plug>(coc-diagnostic-next)
 nmap <space>p <Plug>(coc-diagnostic-prev)
 nmap <space>a <Plug>(coc-codeaction-line)
+vmap <space>a <Plug>(coc-codeaction-selected)
 nmap <space>d <Plug>(coc-definition)
 
 " default is 4s, creating a poor user experience (especially for coc.vim)
