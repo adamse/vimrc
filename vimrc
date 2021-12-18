@@ -87,6 +87,8 @@ cabbr <expr> %% expand('%:p:h')
 set splitright
 set splitbelow
 
+nnoremap ; :
+
 " better window management
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
