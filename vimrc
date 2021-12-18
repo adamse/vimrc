@@ -16,6 +16,7 @@ set autoindent
 " disable autoindent
 autocmd FileType yaml filetype indent off
 autocmd FileType tex filetype indent off
+autocmd FileType asm set fo+=jro comments=:;
 
 " put swapfiles elsewhere
 set directory-=.
