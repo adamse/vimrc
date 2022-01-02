@@ -218,3 +218,6 @@ endif
 
 " go to previous tab, gr because it is close to gt which moves to the next tab
 nnoremap <silent> gr :tabprevious<CR>
+
+" easier V
+nnoremap vv V
