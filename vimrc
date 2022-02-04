@@ -88,6 +88,7 @@ set splitright
 set splitbelow
 
 nnoremap ; :
+vnoremap ; :
 
 " better window management
 nnoremap <C-j> <C-w>j
