@@ -18,6 +18,10 @@ autocmd FileType yaml filetype indent off
 autocmd FileType tex filetype indent off
 autocmd FileType asm set fo+=jro comments=:;
 
+" html indent is janky
+autocmd FileType html setlocal indentexpr=
+autocmd FileType html setlocal smartindent
+
 " put swapfiles elsewhere
 set directory-=.
 
