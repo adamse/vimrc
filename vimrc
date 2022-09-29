@@ -175,11 +175,7 @@ fun! ShowCishFuncName()
   echohl None
 endfun
 
-augroup CishFunctionName
-  au!
-  autocmd FileType c map F :call ShowCishFuncName() <CR>
-  autocmd FileType cpp map F :call ShowCishFuncName() <CR>
-augroup end
+map F :call ShowCishFuncName() <CR>
 
 " grep for word under cursor
 command! Gword grep "\b<cword>\b"
