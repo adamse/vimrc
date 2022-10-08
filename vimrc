@@ -8,7 +8,7 @@ execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
-set background=light
+set background=dark
 
 set enc=utf-8
 
