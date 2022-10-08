@@ -26,7 +26,6 @@
     }
   },
   "rust-analyzer": {
-    "serverPath": "~/local/rust-analyzer/bin/rust-analyzer-linux",
     "cargo": {
       "loadOutDirsFromCheck": true
     },
