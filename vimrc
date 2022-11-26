@@ -22,6 +22,10 @@ autocmd FileType asm set fo+=jro comments=:;
 autocmd FileType html setlocal indentexpr=
 autocmd FileType html setlocal smartindent
 
+" cmake indent is janky
+autocmd FileType cmake setlocal indentexpr=
+autocmd FileType cmake setlocal smartindent
+
 " put swapfiles elsewhere
 set directory-=.
 
