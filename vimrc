@@ -59,8 +59,14 @@ function! CocStatusDiagnostic() abort
   endif
   return join(msgs, ' ')
 endfunction
+
 " statusline with git info
-set statusline=%<%f\ %{FugitiveStatusline()}\ %{CocStatusDiagnostic()}%h%m%r%=%-14.(%l,%c%V%)\ %P
+" f: path to file
+" n: buffer number
+" h: help buffer flag
+" m: modified
+" r: readonly
+set statusline=%<%f\ %n\ %{FugitiveStatusline()}\ %{CocStatusDiagnostic()}%h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " vertical splitter style
 set fillchars+=vert:\  " a space char
