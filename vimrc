@@ -205,6 +205,7 @@ set updatetime=250
 
 " mapping for fzf
 nnoremap <c-p> :FzfFiles<CR>
+nnoremap <c-b> :FzfBuffers<CR>
 
 " nerdcommenter
 let g:NERDDefaultAlign = 'left'
