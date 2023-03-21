@@ -233,3 +233,9 @@ nnoremap <silent> gr :tabprevious<CR>
 
 " easier V
 nnoremap vv V
+
+" send cargo run to the terminal
+" nnoremap <space>r :call CargoRun(terminal_bufno)<CR>
+function! CargoRun(termno)
+    call term_sendkeys(a:termno, "cargo run --release\<CR>")
+endfunction
