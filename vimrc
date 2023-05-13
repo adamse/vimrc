@@ -237,8 +237,14 @@ nnoremap <silent> gr :tabprevious<CR>
 " easier V
 nnoremap vv V
 
-" send cargo run to the terminal
-" nnoremap <space>r :call CargoRun(terminal_bufno)<CR>
-function! CargoRun(termno)
-    call term_sendkeys(a:termno, "cargo run --release\<CR>")
+" run a command in the terminal, indirection so we can properly put the \<CR> in place
+function! Run(termno, command)
+    call term_sendkeys(a:termno, a:command . "\<CR>")
 endfunction
+
+" install <space>r mapping to run a command in a terminal buffer
+function! InstallRun(termno, command)
+    execute "nnoremap <silent> <space>r :call Run(" . a:termno . ", \"" . a:command . "\")<CR>"
+endfunction!
+
+nnoremap <space>r :call InstallRun(termno, command
