@@ -1,44 +1,40 @@
 {
-  "diagnostic": {
-    "enableSign": false
-  },
-  "suggest": {
-    "autoTrigger": false
-  },
-  "languageserver": {
-    "haskell": {
-      "command": "haskell-language-server-wrapper",
-      "args": [
-        "--lsp"
-      ],
-      "rootPatterns": [
-        "hie.yaml"
-      ],
-      "filetypes": [
-        "haskell",
-        "lhaskell"
-      ],
-      "initializationOptions": {
-        "languageServerHaskell": {
-          "hlintOn": false
-        }
-      }
-    }
-  },
-  "rust-analyzer": {
-    "cargo": {
-      "loadOutDirsFromCheck": true
+    "diagnostic": {
+        "enableSign": false
     },
-    "procMacro": {
-      "enable": true
+    "suggest": {
+        "autoTrigger": false
     },
-    "diagnostics": { 
-      "disabled": ["unresolved-proc-macro"]
-    },
-    "inlayHints": {
-        "parameterHints": {
-            "enable": false
+    "languageserver": {
+        "haskell": {
+            "command": "haskell-language-server-wrapper",
+            "args": [
+                "--lsp"
+            ],
+            "rootPatterns": [
+                "hie.yaml"
+            ],
+            "filetypes": [
+                "haskell",
+                "lhaskell"
+            ],
+            "initializationOptions": {
+                "languageServerHaskell": {
+                    "hlintOn": false
+                }
+            }
+        },
+        "rust-analyzer": {
+            "filetypes": ["rust"],
+            "trace.server": "verbose",
+            "cargo.loadOutDirsFromCheck": true,
+            "procMacro.enable": true,
+            "diagnostics.disabled": [
+                "unresolved-proc-macro",
+                "dead_code",
+                "unused_variables"
+            ],
+            "inlayHints.parameterHints.enable": false
         }
     }
-  }
 }
