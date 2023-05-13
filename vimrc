@@ -35,6 +35,9 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
+" text wrapping in comments etc
+set tw=120
+
 " but not for makefiles :)
 autocmd FileType make setlocal noexpandtab
 
