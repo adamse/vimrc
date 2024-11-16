@@ -248,3 +248,6 @@ function! InstallRun(termno, command)
 endfunction!
 
 nnoremap <space>r :call InstallRun(termno, command
+" jsonc
+autocmd BufRead,BufNewFile coc-settings.json set filetype=jsonc
+
