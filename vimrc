@@ -265,6 +265,7 @@ autocmd BufReadPre,FileReadPre BUCK set filetype=bzl
 " jsonc
 autocmd BufRead,BufNewFile coc-settings.json set filetype=jsonc
 
+command! Gadd Git add %
 
 autocmd FileType rust set matchpairs+=<:>
 autocmd FileType cpp set matchpairs+=<:>
