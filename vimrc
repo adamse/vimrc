@@ -269,6 +269,7 @@ autocmd BufRead,BufNewFile coc-settings.json set filetype=jsonc
 let g:Illuminate_ftblacklist = ['forth']
 
 command! Gadd Git add %
+command! Gstatus Git
 
 autocmd FileType rust set matchpairs+=<:>
 autocmd FileType cpp set matchpairs+=<:>
