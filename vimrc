@@ -251,3 +251,6 @@ nnoremap <space>r :call InstallRun(termno, command
 " jsonc
 autocmd BufRead,BufNewFile coc-settings.json set filetype=jsonc
 
+
+autocmd FileType rust set matchpairs+=<:>
+autocmd FileType cpp set matchpairs+=<:>
