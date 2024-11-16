@@ -16,7 +16,12 @@ set autoindent
 " disable autoindent
 autocmd FileType yaml filetype indent off
 autocmd FileType tex filetype indent off
-autocmd FileType asm set fo+=jro comments=:;
+
+" j: remove comment when joining lines, where it makes sense
+" r: automatically insert current comment leader if Enter in Insert mode
+" o: same as r but for o in normal mode
+autocmd FileType asm set formatoptions+=jro comments=:;
+autocmd FileType python set formatoptions+=jro
 
 " html indent is janky
 autocmd FileType html setlocal indentexpr=
