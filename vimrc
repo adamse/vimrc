@@ -248,6 +248,15 @@ function! InstallRun(termno, command)
 endfunction!
 
 nnoremap <space>r :call InstallRun(termno, command
+
+execute "nnoremap , :Rg -w <cword> "
+
+" make a small terminal window
+command! Sm new | set wfh | resize 10 | terminal ++curwin
+
+" BUCK files are starlark/bzl
+autocmd BufReadPre,FileReadPre BUCK set filetype=bzl
+
 " jsonc
 autocmd BufRead,BufNewFile coc-settings.json set filetype=jsonc
 
