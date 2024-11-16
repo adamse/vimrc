@@ -23,18 +23,28 @@
                     "hlintOn": false
                 }
             }
-        },
-        "rust-analyzer": {
-            "filetypes": ["rust"],
-            "trace.server": "verbose",
-            "cargo.loadOutDirsFromCheck": true,
-            "procMacro.enable": true,
-            "diagnostics.disabled": [
+        }
+    },
+    "rust-analyzer": {
+        // "filetypes": ["rust"],
+        // "trace.server": "verbose",
+        // "cargo.loadOutDirsFromCheck": true,
+        // "procMacro.enable": true,
+        "check": {
+            "ignore": [
                 "unresolved-proc-macro",
                 "dead_code",
-                "unused_variables"
-            ],
-            "inlayHints.parameterHints.enable": false
-        }
-    }
+                "unused_variables",
+                "unused_imports"
+            ]
+        },
+        "diagnostics": {
+            "disabled": ["inactive-code"]
+        },
+        "inlayHints": {"parameterHints": {"enable": false}}
+    },
+    "pyright": {
+        "typeCheckingMode": "off"
+    },
+    "inlayHint": { "display": false }
 }
